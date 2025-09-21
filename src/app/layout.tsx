@@ -8,12 +8,46 @@ import "./globals.css"
 import Footer from "@/components/footer"
 import PromotionalBanner from "@/components/PromotionalBanner"
 import { Header } from "@/components/header"
+import siteMetadata from "@/lib/siteMetaData"
 
-export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
-}
+export const metadata = {
+  metadataBase: new URL(siteMetadata.siteUrl),
+  title: {
+    template: `%s | ${siteMetadata.title}`,
+    default: siteMetadata.title, // a default is required when creating a template
+  },
+  description: siteMetadata.description,
+  keyword: [],
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [siteMetadata.socialBanner],
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  other: {
+    // cryptomus: "6c638042",
+  },
+  socialMedia: {
+    youtube: siteMetadata.youtube,
+  }
+};
+
+
 
 export default function RootLayout({
   children,

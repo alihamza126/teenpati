@@ -1,40 +1,51 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Download, CheckCircle, MessageCircle } from "lucide-react";
+import { Download, CheckCircle } from "lucide-react";
+import { getGameBySlug, GAMES } from "@/lib/games";
+import { GameSuggestions } from "@/components/game-suggestions";
+import { Metadata } from "next";
 
-type Game = {
-  slug: string;
-  name: string;
-  icon: string;
-  downloadsLabel: string;
-  bonusLabel: string;
-  minWithdraw: string;
-  tagline: string;
-  description: string;
-  features: string[];
-  externalUrl: string;
-};
+// Generate static params for all games
+export async function generateStaticParams() {
+  return GAMES.map((game) => ({
+    slug: game.slug,
+  }));
+}
 
-const games: Game[] = [
-  {
-    slug: "rummy-meet",
-    name: "Rummy Meet",
-    icon: "/window.svg",
-    downloadsLabel: "807K+ Downloads",
-    bonusLabel: "₹79 Bonus on Signup!",
-    minWithdraw: "₹300",
-    tagline: "India's Fastest Rummy Platform | 200M+ Players",
-    description:
-      "Rummy Meet App – play cash games, daily tournaments, and withdraw instantly.",
-    features: [
-      "Instant Withdrawal",
-      "24/7 Support",
-      "Daily Tournaments",
-      "Secure Gaming",
-    ],
-    externalUrl: "https://scrunchiezine.com/",
-  },
-];
+// Generate metadata for each game
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const game = getGameBySlug(slug);
+
+  if (!game) {
+    return {
+      title: "Game Not Found",
+      description: "The requested game could not be found.",
+    };
+  }
+
+  return {
+    title: game.seo.title,
+    description: game.seo.description,
+    keywords: game.seo.keywords.join(", "),
+    openGraph: {
+      title: game.seo.ogTitle,
+      description: game.seo.ogDescription,
+      images: [game.icon],
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: game.seo.ogTitle,
+      description: game.seo.ogDescription,
+      images: [game.icon],
+    },
+  };
+}
 
 export default async function GamePage({
   params,
@@ -42,7 +53,7 @@ export default async function GamePage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const game = games.find((g) => g.slug === slug);
+  const game = getGameBySlug(slug);
 
   if (!game) {
     return (
@@ -72,19 +83,19 @@ export default async function GamePage({
         <div className="flex flex-col items-center text-center space-y-3">
           <Image src={game.icon} alt={game.name} width={80} height={80} />
           <h1 className="text-3xl font-bold text-blue-900">
-            {game.name} Apk Download
+            {game.name} APK Download
           </h1>
-          <p className="text-gray-600">{game.tagline}</p>
+          <p className="text-gray-600">{game.description}</p>
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
           <div className="bg-gray-100 rounded-lg p-4 flex items-center justify-center text-lg font-semibold text-red-600">
             <Download className="w-5 h-5 mr-2" />
-            {game.downloadsLabel}
+            {game.downloads} Downloads
           </div>
           <div className="bg-red-100 rounded-lg p-4 flex items-center justify-center text-lg font-semibold text-red-700">
-            🎁 Get Instant {game.bonusLabel}
+            🎁 Get Instant {game.bonus} Bonus
           </div>
         </div>
 
@@ -96,8 +107,18 @@ export default async function GamePage({
           </div>
           <div className="flex items-center justify-center gap-2">
             <CheckCircle className="w-5 h-5 text-green-500" />
-            Min. Withdrawal {game.minWithdraw}
+            Min. Withdrawal {game.minWithdrawal}
           </div>
+        </div>
+
+        {/* Rating */}
+        <div className="flex items-center justify-center gap-2 mt-4">
+          <div className="flex items-center">
+            <span>
+              <img src="/stars.webp" className=" h-3.5" />
+            </span>
+          </div>
+          <span className="text-gray-600 font-medium">{game.rating}/5 Rating</span>
         </div>
 
         {/* Features */}
@@ -135,6 +156,9 @@ export default async function GamePage({
           links. Always play responsibly and only if legal in your region.
         </p>
       </div>
+
+      {/* Game Suggestions */}
+      <GameSuggestions currentGameId={game.id} />
     </div>
   );
 }

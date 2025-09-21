@@ -3,11 +3,13 @@ import { AppCard } from "./app-card"
 interface App {
     rank: number
     name: string
+    slug: string
     icon: string
     downloads: string
     bonus: string
     minWithdrawal: string
     description: string
+    externalUrl: string
     rating: number
 }
 

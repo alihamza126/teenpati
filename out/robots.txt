@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rummygamer.com
+
+# Sitemaps
+Sitemap: https://rummygamer.com/sitemap.xml

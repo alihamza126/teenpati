@@ -8,7 +8,7 @@ export function Header() {
     const pathname = usePathname()
 
     return (
-        <header className="bg-blue-900 top-0 z-50 text-white py-4 px-6">
+        <header className=" bg-blue-900 top-0 z-50 text-white py-4 px-6">
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <Link href="/" className="text-xl font-bold">
                     Rummy Nabob Apk
