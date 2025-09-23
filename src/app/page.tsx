@@ -3,10 +3,11 @@
 import { AppsGrid } from "@/components/apps-grid"
 import { HeroSection } from "@/components/hero-section"
 import { getTopGames } from "@/lib/games"
+import { Suspense } from "react";
 
 export default function HomePage() {
   const topApps = getTopGames(6);
-  
+
   return (
     <div className="min-h-screen bg-gray-50">
       <HeroSection
@@ -15,7 +16,9 @@ export default function HomePage() {
         className="bg-white"
       />
 
-      <AppsGrid title="Top All Rummy Apps" apps={topApps} />
+      <Suspense fallback={<div>Loading</div>}>
+        <AppsGrid title="Top All Rummy Apps" apps={topApps} />
+      </Suspense>
     </div>
   )
 }

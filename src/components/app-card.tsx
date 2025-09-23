@@ -36,7 +36,7 @@ export function AppCard({
         // ))
         return (
             <span>
-                <img src="/stars.webp" className=" h-3.5" />
+                <img src="/stars.webp" alt="rating" className=" h-3.5" />
             </span>
         )
     }

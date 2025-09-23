@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section"
 
 export const metadata = {
-  title: "Privacy Policy - Rummy Nabob Apk",
+  title: "Privacy Policy - Rummy Gamer Apk",
   description: "Our privacy policy explains how we collect, use, and protect your personal information.",
 }
 

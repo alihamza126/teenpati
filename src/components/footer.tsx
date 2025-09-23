@@ -64,7 +64,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <div className="text-center border-t border-blue-800 pt-4">
-                        <p className="text-sm text-gray-300">Copyright © 2024 Rummy Nabob Apk | All Rights Reserved</p>
+                        <p className="text-sm text-gray-300">Copyright © {new Date().getFullYear()} Rummy Gamer Apk | All Rights Reserved</p>
                     </div>
                 </div>
             </div>

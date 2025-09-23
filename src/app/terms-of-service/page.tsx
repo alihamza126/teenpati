@@ -1,8 +1,8 @@
 import { HeroSection } from "@/components/hero-section"
 
 export const metadata = {
-  title: "Terms of Service - Rummy Nabob Apk",
-  description: "Terms and conditions for using our gaming app review website and services.",
+    title: "Terms of Service - Rummy Gamer Apk",
+    description: "Terms and conditions for using our gaming app review website and services.",
 }
 
 export default function TermsOfServicePage() {
@@ -19,22 +19,22 @@ export default function TermsOfServicePage() {
                     <div className="bg-blue-50 border-l-4 border-blue-400 p-6 mb-8">
                         <h2 className="text-xl font-bold text-blue-800 mb-2">Agreement to Terms</h2>
                         <p className="text-blue-700">
-                            By accessing and using this website, you agree to be bound by these Terms of Service 
-                            and all applicable laws and regulations. If you do not agree with any of these terms, 
+                            By accessing and using this website, you agree to be bound by these Terms of Service
+                            and all applicable laws and regulations. If you do not agree with any of these terms,
                             you are prohibited from using this site.
                         </p>
                     </div>
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Acceptance of Terms</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        These Terms of Service ("Terms") govern your use of our website and services. 
-                        By using our website, you acknowledge that you have read, understood, and agree to be 
+                        These Terms of Service ("Terms") govern your use of our website and services.
+                        By using our website, you acknowledge that you have read, understood, and agree to be
                         bound by these Terms. We reserve the right to modify these Terms at any time without prior notice.
                     </p>
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Description of Service</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Rummy Nabob Apk provides information, reviews, and recommendations about gaming applications, 
+                        Rummy Gamer Apk provides information, reviews, and recommendations about gaming applications,
                         particularly focusing on rummy and card games. Our services include:
                     </p>
                     <ul className="text-gray-700 space-y-2 mb-4">
@@ -74,8 +74,8 @@ export default function TermsOfServicePage() {
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Intellectual Property Rights</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        All content on this website, including text, graphics, logos, images, and software, 
-                        is the property of Rummy Nabob Apk or its content suppliers and is protected by 
+                        All content on this website, including text, graphics, logos, images, and software,
+                        is the property of Rummy Gamer Apk or its content suppliers and is protected by
                         copyright and other intellectual property laws.
                     </p>
                     <ul className="text-gray-700 space-y-2 mb-4">
@@ -87,23 +87,23 @@ export default function TermsOfServicePage() {
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Third-Party Links and Content</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Our website may contain links to third-party websites, apps, or services. 
-                        These links are provided for your convenience only. We do not endorse or assume 
+                        Our website may contain links to third-party websites, apps, or services.
+                        These links are provided for your convenience only. We do not endorse or assume
                         responsibility for the content, privacy policies, or practices of these third-party sites.
                     </p>
 
                     <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-6">
                         <h3 className="text-lg font-bold text-yellow-800 mb-2">⚠️ Important Notice</h3>
                         <p className="text-yellow-700">
-                            When you click on third-party links, you will be subject to their terms of service 
-                            and privacy policies. We recommend reviewing these documents before using any 
+                            When you click on third-party links, you will be subject to their terms of service
+                            and privacy policies. We recommend reviewing these documents before using any
                             third-party services.
                         </p>
                     </div>
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Disclaimer of Warranties</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Our website and services are provided "as is" without any warranties, express or implied. 
+                        Our website and services are provided "as is" without any warranties, express or implied.
                         We disclaim all warranties, including but not limited to:
                     </p>
                     <ul className="text-gray-700 space-y-2 mb-4">
@@ -115,7 +115,7 @@ export default function TermsOfServicePage() {
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Limitation of Liability</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        In no event shall Rummy Nabob Apk, its officers, directors, employees, or agents be liable 
+                        In no event shall Rummy Gamer Apk, its officers, directors, employees, or agents be liable
                         for any direct, indirect, incidental, special, consequential, or punitive damages arising out of:
                     </p>
                     <ul className="text-gray-700 space-y-2 mb-4">
@@ -128,7 +128,7 @@ export default function TermsOfServicePage() {
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Indemnification</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        You agree to indemnify and hold harmless Rummy Nabob Apk and its affiliates from any claims, 
+                        You agree to indemnify and hold harmless Rummy Gamer Apk and its affiliates from any claims,
                         damages, losses, or expenses (including attorney's fees) arising from:
                     </p>
                     <ul className="text-gray-700 space-y-2 mb-4">
@@ -152,36 +152,36 @@ export default function TermsOfServicePage() {
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Age Restrictions</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Our services are intended for users who are at least 18 years old. By using our website, 
-                        you represent and warrant that you are at least 18 years of age. We do not knowingly 
+                        Our services are intended for users who are at least 18 years old. By using our website,
+                        you represent and warrant that you are at least 18 years of age. We do not knowingly
                         collect information from individuals under 18 years of age.
                     </p>
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Termination</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        We reserve the right to terminate or suspend your access to our website immediately, 
-                        without prior notice or liability, for any reason whatsoever, including without limitation 
+                        We reserve the right to terminate or suspend your access to our website immediately,
+                        without prior notice or liability, for any reason whatsoever, including without limitation
                         if you breach these Terms.
                     </p>
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Governing Law</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        These Terms shall be governed by and construed in accordance with the laws of India, 
-                        without regard to its conflict of law provisions. Any disputes arising from these Terms 
+                        These Terms shall be governed by and construed in accordance with the laws of India,
+                        without regard to its conflict of law provisions. Any disputes arising from these Terms
                         shall be subject to the exclusive jurisdiction of the courts in India.
                     </p>
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Severability</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        If any provision of these Terms is held to be invalid or unenforceable, the remaining 
-                        provisions shall remain in full force and effect. We will replace any invalid provision 
+                        If any provision of these Terms is held to be invalid or unenforceable, the remaining
+                        provisions shall remain in full force and effect. We will replace any invalid provision
                         with a valid provision that most closely approximates the intent of the invalid provision.
                     </p>
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Changes to Terms</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        We reserve the right to modify these Terms at any time. Changes will be effective 
-                        immediately upon posting on this page. Your continued use of our website after any 
+                        We reserve the right to modify these Terms at any time. Changes will be effective
+                        immediately upon posting on this page. Your continued use of our website after any
                         changes constitutes acceptance of the new Terms.
                     </p>
 
@@ -199,10 +199,10 @@ export default function TermsOfServicePage() {
 
                     <div className="bg-gray-100 p-6 rounded-lg mt-8">
                         <p className="text-sm text-gray-600 text-center">
-                            <strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', { 
-                                year: 'numeric', 
-                                month: 'long', 
-                                day: 'numeric' 
+                            <strong>Last Updated:</strong> {new Date().toLocaleDateString('en-US', {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
                             })}
                         </p>
                     </div>

@@ -4,7 +4,7 @@ export default function AboutPage() {
     return (
         <div className="min-h-screen bg-gray-50">
             <HeroSection
-                title="About Rummy Nabob Apk"
+                title="About Rummy Gamer Apk"
                 subtitle="Your trusted source for the best Rummy apps in India"
                 className="bg-white"
             />
@@ -12,7 +12,7 @@ export default function AboutPage() {
             <section className="py-12 px-6">
                 <div className="max-w-4xl mx-auto prose prose-lg">
                     <p className="text-gray-700 leading-relaxed">
-                        Welcome to Rummy Nabob Apk, your ultimate destination for discovering the best Rummy gaming apps in India.
+                        Welcome to Rummy Gamer Apk, your ultimate destination for discovering the best Rummy gaming apps in India.
                         We provide comprehensive reviews, comparisons, and trusted download links for all major Rummy platforms.
                     </p>
 

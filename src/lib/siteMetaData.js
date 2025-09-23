@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Rummy Gamer – Download Rummy Nabob Apk 2025 & Play Teen Patti Online',
+  title: 'Rummy Gamer – Download Rummy Gamer Apk 2025 & Play Teen Patti Online',
   author: 'Rummy Gamer',
   description:
-    'Rummy Gamer brings you the latest Rummy Nabob Apk 2025 to play Teen Patti, Rummy, and other real cash games. Get a ₹1000 bonus, safe transactions, instant withdrawal, and unlimited fun online.',
+    'Rummy Gamer brings you the latest Rummy Gamer Apk 2025 to play Teen Patti, Rummy, and other real cash games. Get a ₹1000 bonus, safe transactions, instant withdrawal, and unlimited fun online.',
   language: 'en-IN',
   theme: 'system',
   siteUrl: 'https://rummygamer.com', // your real domain
@@ -14,6 +14,7 @@ const siteMetadata = {
   locale: 'en-IN',
   keywords: [
     'Rummy Gamer',
+    'Rummy Gamer Apk',
     'Rummy Nabob Apk',
     'Teen Patti Online',
     'Rummy App Download',

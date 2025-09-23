@@ -1,5 +1,4 @@
 import type React from "react"
-import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
@@ -8,6 +7,7 @@ import "./globals.css"
 import Footer from "@/components/footer"
 import PromotionalBanner from "@/components/PromotionalBanner"
 import { Header } from "@/components/header"
+import { AnimatedDownloadButtons } from "@/components/AnimatedDownloadButtons"
 import siteMetadata from "@/lib/siteMetaData"
 
 export const metadata = {
@@ -60,8 +60,11 @@ export default function RootLayout({
         <Header />
         <Suspense fallback={null}>{children}</Suspense>
         <Footer />
-        <Analytics />
-        <PromotionalBanner />
+        <Suspense fallback={null}>
+          <AnimatedDownloadButtons />
+          <Analytics />
+          <PromotionalBanner />
+        </Suspense>
       </body>
     </html>
   )

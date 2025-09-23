@@ -69,7 +69,7 @@ export default async function GamePage({
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center p-6">
+    <div className="min-h-screen bg-gray-50 flex flex-col items-center p-3 md:p-6">
       {/* Back link */}
       <div className="w-full max-w-3xl mb-4">
         <Link href="/" className="text-sm text-gray-600 hover:underline">
@@ -90,7 +90,7 @@ export default async function GamePage({
 
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
-          <div className="bg-gray-100 rounded-lg p-4 flex items-center justify-center text-lg font-semibold text-red-600">
+          <div className="bg-gray-200/60 rounded-lg p-4 flex items-center justify-center text-lg font-semibold text-red-600">
             <Download className="w-5 h-5 mr-2" />
             {game.downloads} Downloads
           </div>
@@ -115,7 +115,7 @@ export default async function GamePage({
         <div className="flex items-center justify-center gap-2 mt-4">
           <div className="flex items-center">
             <span>
-              <img src="/stars.webp" className=" h-3.5" />
+              <img src="/stars.webp" alt="rating" className=" h-3.5" />
             </span>
           </div>
           <span className="text-gray-600 font-medium">{game.rating}/5 Rating</span>
@@ -143,7 +143,7 @@ export default async function GamePage({
             href={game.externalUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 text-white text-lg font-semibold shadow hover:bg-red-700 transition"
+            className="inline-flex text-sm items-center text-center gap-2 px-6 py-3 rounded-full bg-red-600 text-white md:text-lg font-semibold shadow hover:bg-red-700 transition"
           >
             <Download className="w-5 h-5" />
             Download {game.name}

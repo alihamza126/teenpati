@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section"
 
 export const metadata = {
-  title: "Disclaimer - Rummy Nabob Apk",
+  title: "Disclaimer - Rummy Gamer Apk",
   description: "Important disclaimers and legal information regarding our gaming app reviews and recommendations.",
 }
 
@@ -78,7 +78,7 @@ export default function DisclaimerPage() {
 
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">Limitation of Liability</h2>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        In no event shall Rummy Nabob Apk, its owners, employees, or affiliates be liable 
+                        In no event shall Rummy Gamer Apk, its owners, employees, or affiliates be liable 
                         for any direct, indirect, incidental, special, consequential, or punitive damages, 
                         including without limitation, loss of profits, data, use, goodwill, or other 
                         intangible losses, resulting from your use of this website or any recommended apps.
